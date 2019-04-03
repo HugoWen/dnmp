@@ -114,3 +114,5 @@ RUN apt install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
 #    && apt install -y libmemcached-dev zlib1g-dev \
 #    && pecl install memcached-2.2.0 \
 #    && docker-php-ext-enable memcached
+
+EXPOSE 8888 # 开放8888端口 调试swoole使用

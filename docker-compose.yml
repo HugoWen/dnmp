@@ -32,6 +32,8 @@ services:
       - SYS_PTRACE
     networks:
       - default
+    ports:
+      - "8888:8888" #映射8888端口到本地 调试swoole使用
 
   php56:
     build:
